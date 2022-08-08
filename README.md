@@ -278,7 +278,7 @@ Dies ist leider ein Bug für den es noch keine Lösung gibt. Das Problem äusert
 
 Eigentlich ja.
 
-Es ist möglich alle Tätigkeiten welche in SSMS durchgeführt werden auch in VisualStudio zu machen. Die einzige Anwendungsmöglichkeit wäre villeicht eine Fehlersuche bei diversen Problembereichen auf welche VisualStudio zu wenig Zugriff hat.
+Es ist möglich alle Tätigkeiten welche in SSMS durchgeführt werden auch in VisualStudio zu machen bis auf eine Änderungen des Authentifizierungsmodus. Dies ist nur in SSMS oder über SQL Registry Abfragen möglich. Dies wird bei **Schritt 2.5** beschrieben.
 
 ---
 
@@ -313,6 +313,12 @@ Da ein solches Verfahren Risiken mit sich bringt, ist davon abzuraten. Der Authe
 ### 2.6 Wie funktioniert eine Produktions-Pipeline in VisualStudio?
 
 Dies ist am besten mit "Schema Vergleichen" möglich. Diese werden in Anleitung 1.9 ausführlich erklärt. Mit diesen kann man sowohl Test auf Dev und Dev auf Prod Datenbanken übertragen als auch Prod zurück auf Dev.
+
+---
+
+### 2.7 Kann ich Git verwenden?
+
+Ja, ganz einfach über den "_Team Exlorer_" ein Repository erstellen. Änderungen können mit "_committ_" und "_push_" dann hochgeladen werden.
 
 ---
 

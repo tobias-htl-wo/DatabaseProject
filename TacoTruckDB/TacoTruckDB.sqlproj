@@ -24,6 +24,7 @@
     <TargetDatabaseSet>True</TargetDatabaseSet>
     <DefaultCollation>Latin1_General_CI_AS</DefaultCollation>
     <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+    <Containment>Partial</Containment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -71,6 +72,7 @@
     <Build Include="dbo\Tables\Tacos.sql" />
     <Build Include="dbo\Views\AllCustomers.sql" />
     <Build Include="dbo\Stored Procedures\SalesByCustomer.sql" />
+    <Build Include="dbo\Views\testview.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="TacoTruckDB.publish.xml" />
