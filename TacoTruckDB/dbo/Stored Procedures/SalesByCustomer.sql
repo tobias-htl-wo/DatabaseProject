@@ -10,4 +10,5 @@ begin
 	left join dbo.Location as l on s.LocationID = l.LocationID
 	left join dbo.Meat as m on s.MeatID = m.MeatID
 	where c.Firstname = @firstname and c.Lastname = @lastname
+	--testechange
 end
