@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [LAPTOP-HH7HE1JM\ConsultNetwork] FROM WINDOWS;
+
+

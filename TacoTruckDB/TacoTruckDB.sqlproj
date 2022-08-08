@@ -73,6 +73,8 @@
     <Build Include="dbo\Views\AllCustomers.sql" />
     <Build Include="dbo\Stored Procedures\SalesByCustomer.sql" />
     <Build Include="dbo\Views\testview.sql" />
+    <Build Include="dbo\Login1.sql" />
+    <Build Include="dbo\User1.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="TacoTruckDB.publish.xml" />

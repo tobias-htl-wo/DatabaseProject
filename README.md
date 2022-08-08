@@ -34,8 +34,6 @@ Mit **Serverdatenbank** ist eine Datenbank gemeint welche live auf einem SQL-Ser
 
 Mit **Projektdatenbank** ist eine Datenbank "Struktur" gemeint welche auf keinem Server aktiv ist und unter dem VisualStudio Projekt gespeichert ist. Diese kann jedoch, sofern keine Fehler vorhanden sind, auf einen SQL-Server geladen und dort eingesetzt werden.
 
-Der **angemeldete User muss Admin sein** oder VisualStudio muss **als Admin gestartet** worden sein.
-
 ---
 
 ### 1.1 Database "Struktur" aufbauen und auf SQL-Server erstellen
