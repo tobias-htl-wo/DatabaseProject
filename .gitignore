@@ -362,6 +362,9 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 
-# irgentwos
+# commentary 
+# If you see this I say hi and welcome to the .gitignore file which neither of us know why you are reading.
+# Anyways I hope you enjoyed the read! See ya!
 CreateConsultLogin.sql 
 CreateConsultUser.sql 
+README.pdf

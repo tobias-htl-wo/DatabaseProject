@@ -1,16 +1,16 @@
-# Database-Projekt in VisualSudio Dokumentation
+# Database-Projekt in VisualStudio Dokumentation
 
 ### Die Erstellung und Bearbeitung einer neuen oder schon vorhandenen Datenbank in Microsoft VisualStudio.
 
-## Installation und Einrichtig der Infrastruktur
+## Installation und Einrichtung der Infrastruktur
 
 ### 0.1 Installation von VisualStudio und benötigte Toolsets
 
 1. Laden sie [Microsoft VisualStudio](https://visualstudio.microsoft.com/ "Download here") herunter und installieren sie es.
 2. Danach klicken sie im **VisualStudio Installer** auf "_Ändern_" bei Ihrer VisualStudio Installation.
-3. Scrollen sie im neuen Fenster bis "_Andere Toolsets_" und wählen sie "_Datenspeicherung und -verarbeitung_" aus.
+3. Scrollen sie im neuen Fenster bis "_Andere Toolsets_" und wählen sie "_Datenspeicherung und -Verarbeitung_" aus.
 4. Stellen sie sicher das in der Liste rechts "_SQL Server Data Tools_" ausgewählt ist und klicken sie rechts unten auf "_Ändern_".
-5. Nach erfolgreicher Installation starten sie VistualStudio
+5. Nach erfolgreicher Installation starten sie VisualStudio
 
 ---
 
@@ -19,7 +19,7 @@
 1. Wählen sie auf der rechten Seite "_Create a new project_" oder "_Erstellen Sie ein neues Projekt_".
 2. Suchen sie im neuen Fenster nach "_Database_" und wählen sie "_SQL Server Database Project_" aus und klicken auf "_next_".
 3. Geben sie unter "_Projekt Name_" einen Namen für ihr Projekt sein. Der Name ist **komplett unabhängig** von dem SQL Server oder seiner Databases. Daher muss der Name weder noch gleich oder ähnlich sein.
-4. Optionell können sie auch den Speicherort ändern.
+4. Optional können sie auch den Speicherort ändern.
 5. Klicken sie danach auf "_Erstellen_"
 
 ---
@@ -30,27 +30,27 @@
 
 Die folgenden Anleitungen müssen nicht hintereinander ausgeführt werden. Es sind einzelne Anweisungen für verschiedene Anwendungen.
 
-Mit **Serverdatenbank** ist eine Datenbank gemeint welche live auf einem SQL-Server läuft.
+Mit **Serverdatenbank** ist eine Datenbank gemeint, welche live auf einem SQL-Server läuft.
 
-Mit **Projektdatenbank** ist eine Datenbank "Struktur" gemeint welche auf keinem Server aktiv ist und unter dem VisualStudio Projekt gespeichert ist. Diese kann jedoch, sofern keine Fehler vorhanden sind, auf einen SQL-Server geladen und dort eingesetzt werden.
+Mit **Projektdatenbank** ist eine Datenbank "Struktur" gemeint, welche auf keinem Server aktiv ist und unter dem VisualStudio Projekt gespeichert ist. Diese kann jedoch, sofern keine Fehler vorhanden sind, auf einen SQL-Server geladen und dort eingesetzt werden.
 
 ---
 
 ### 1.1 Database "Struktur" aufbauen und auf SQL-Server erstellen
 
 1. Mit [Strg + Alt + L] den **Solution Explorer** aufrufen und dort "_Database1_" zu gewünschten Namen mit _Rechtsklick_ -> _Umbenennen_ umändern.
-2. _Dies ist nur optional, es dient jedoch zu einer besseren Übersicht und einfacherem Verständnis._ _Rechtsklick_ auf die soeben umbenannte Datenbank -> "_Hinzufügen_" -> "_Ordner_". Der Ordner wird standartmäßig "_dbo_" genannt. Danach erstellen sie mit _Rechtsklick_ auf "_dbo_" -> "_Hinzufügen_" -> "_Ordner_" drei weitere Ordner bis eine Orderstruktur wie folgt erstanden ist.
+2. _Dies ist nur optional, es dient jedoch zu einer besseren Übersicht und einfacherem Verständnis._ _Rechtsklick_ auf die soeben umbenannte Datenbank -> "_Hinzufügen_" -> "_Ordner_". Der Ordner wird standartmäßig "_dbo_" genannt. Danach erstellen sie mit _Rechtsklick_ auf "_dbo_" -> "_Hinzufügen_" -> "_Ordner_" drei weitere Ordner bis eine Orderstruktur wie folgt entstanden ist.
    - dbo
      - Tables
      - Views
      - Stored Procedures
 3. Um unsere erste Tabelle zu erstellen _Rechtsklick_ auf "Tabelle" -> "_Hinzufügen_" -> "_Tabelle_". Im neuen Fenster kann unten ein Name angegeben werden. Der Name wird standartmäßig als Tabellenname und als ".sql" Dateiname verwenden.  
    (Der ".sql" Dateiname ist nicht wichtig für die Datenbank, er sollte jedoch für einfacheres Arbeiten gleich wie die Tabelle sein welche die Datei erstellt.) Danach auf "_Hinzufügen_" klicken.
-4. Jetzt sollten sich in der Mitte des Bildschirmes zwei Fenster öffnen. Das Obere ist das Tabllen-Design und das Untere enthält den SQL-Code dafür.  
-   (Sobald eine Änderung in einer der zwei Fenstern gemacht wird aktuallierst sich das jeweils andere Fenster und passt sich an.)
-5. Um neue Spalten für diese Tabelle zu erstellen, klickt man einfach auf die leer Zeile unter "Id" und gibt Namen, Datentypen, Nullerlaubnis und Normalwert an. Durch _Enter_ wird die Spalte erstellt und im SQL-Code Fenster wird die neue Zeile sichtbar. Die Zeile "Id" kann natürlich auch noch geändert werden und wird in den meißten Fällen zur UID.
+4. Jetzt sollten sich in der Mitte des Bildschirmes zwei Fenster öffnen. Das Obere ist das Tabellen-Design und das Untere enthält den SQL-Code dafür.  
+   (Sobald eine Änderung in einer der zwei Fenstern gemacht wird aktualisiert sich das jeweils andere Fenster und passt sich an.)
+5. Um neue Spalten für diese Tabelle zu erstellen, klickt man einfach auf die leere Zeile unter "Id" und gibt Namen, Datentypen, Nullerlaubnis und Normalwert an. Durch _Enter_ wird die Spalte erstellt und im SQL-Code Fenster wird die neue Zeile sichtbar. Die Zeile "Id" kann natürlich auch noch geändert werden und wird in den meisten Fällen zur UID.
 6. (**optional**) Mit der Funktionstaste [F4] kann das Fenster **Eigenschaften** aufgerufen werden. Man kann dort ganz einfach eine Automatische ID Zuweisung für die UID Spalten einstellen. 1. Einfach die gewünschte Zeile (UID Spalte) auswählen und in den Eigenschaften unter "_Tabellen Designer_" -> "_Identitäts Spezifikationen_" "(Is Identity)" auf _true_ setzten.  
-   (Mit den kleinen Pin-Symbolen kann man den **Solution Explorer** und die **Eigenschaften** auf einer Seite fixieren und untereinandern anzeigen lassen)
+   (Mit den kleinen Pin-Symbolen kann man den **Solution Explorer** und die **Eigenschaften** auf einer Seite fixieren und untereinander anzeigen lassen)
 7. Sie können auch eine Tabelle im SQL-Code Fenster erstellen indem sie dort die gewünschten Spalten mit folgendem Syntax erstellen.
 
    - [{Spaltenname}] {Datentyp} {Nullerlaubnis},
@@ -114,7 +114,7 @@ CREATE VIEW [dbo].[Lagerzahlen]
 	FROM [Lager] as l left join [Produkte] as p on l.ProduktNummer = p.ProduktID
 ```
 
-21. Nach Abschluss dieses "View" speichern und schliesen.
+21. Nach Abschluss dieses "View" speichern und schließen.
 22. Eine "stored procedure" kann ebenso einfach erstellt werden. "_Rechtsklick_" auf "Stored Procedures" -> "_Hinzufügen_" -> "_Stored Procedure_", Namen eingeben und "_Hinzufügen_" klicken.  
     (Eine "stored procedure" kann anders als "Views" auch Parameter verwenden.)
 23. Beispielcode: Stückzahl eines einzelnen Produktes
@@ -128,12 +128,12 @@ AS
 	WHERE p.ProduktID = @Produktnummer
 ```
 
-24. Jetzt können sie nach Belieben Tabellen, Beziehungen, Views und stored Procedures erstellen. Wenn sie mit ihrem Datenbank "Rohbau" fertig sind können wir diesen nun auf einen SQL-Server hochladen, da alles was bis jetzt gemacht wurde nur Scripte sind, welche unsere Datenbank erstellen kann.
-25. **Folgendes setzt einen bereits fertig erstellten SQL-Server vorraus.**
+24. Jetzt können sie nach Belieben Tabellen, Beziehungen, Views und stored Procedures erstellen. Wenn sie mit ihrer Datenbank "Rohbau" fertig sind können wir diesen nun auf einen SQL-Server hochladen, da alles was bis jetzt gemacht wurde nur Scripte sind, welche unsere Datenbank erstellen kann.
+25. **Folgendes setzt einen bereits fertig erstellten SQL-Server voraus.**
 26. [Strg-Shift-S] drücken um alles zu Speichern und danach "_Rechtsklick_" auf unsere Datenbank -> "_Optionen_". Im neuen Fenster unter "_Projekt Optionen_" bei "_Zielplattform_" die SQL-Server Version des Ziel-Servers auswählen. Danach die "_Projekt Optionen_" wieder schließen.
 27. "_Rechtsklick_" auf unsere Datenbank -> "_Veröffentlichen_". Im neuen Fenster klicken sie auf "_Bearbeiten_" um einen SQL-Server auszuwählen. Falls der gewünschte Server nicht unter "Browse" zu sehen, ist müssen dessen Namen und Authentifizierungsdaten manuell eingegeben werden. Für "_Datenbank Name_" wird nichts ausgewählt, da wir ja eine neue erstellen wollen. Auf "_Verbindung testen_" klicken und bei einem Fehler die angegebenen Daten und den Serverstatus überprüfen. Danach auf "_Ok_" klicken und zum "Datenbank veröffentlichen" Fenster zurückkehren.
 28. Hier unter "_Datenbank Name_" den Namen der zu erstellenden Datenbank eingeben und auf "_Veröffentlichen_" klicken.
-29. Öffnet man nun über "_Ansicht_" den "_SQL Server Objekt Explorer_" findet man unter "_SQL Server_" den verbundenen SQL-Server in dessen Orderstruktur unter "_Databases_" die soeben erstellte Datenbank und darunter die erstellten Tabllen, Views und stored Procedures.  
+29. Öffnet man nun über "_Ansicht_" den "_SQL Server Objekt Explorer_" findet man unter "_SQL Server_" den verbundenen SQL-Server in dessen Orderstruktur unter "_Databases_" die soeben erstellte Datenbank und darunter die erstellten Tabellen, Views und stored Procedures.  
     (stored Procedures werden unter "_Programmability_" gespeichert.)
 30. Alle Änderungen die in der Projektdatenbank (nicht direkt am Server) gemacht werden müssen neu übertragen werden mit **Anleitung 1.4**.
 
@@ -143,7 +143,7 @@ AS
 
 Hier werde nur Tabellen, Views, stores Procedures, usw. übertragen, **kein Daten**
 
-Um eine Serverdatenbank zu importieren darf keine SQL Datei unter dem Projekt bereits vorhanden sei. d.h. Ist eine Datenbank schon importiert muss diese (alle Datein mit der Endung ".sql") zuerst aus dem Projekt gelöscht werden.
+Um eine Serverdatenbank zu importieren darf keine SQL Datei unter dem Projekt bereits vorhanden sei. d.h. Ist eine Datenbank schon importiert muss diese (alle Dateien mit der Endung ".sql") zuerst aus dem Projekt gelöscht werden.
 
 1. Mit [Strg + Alt + L] den **Solution Explorer** aufrufen und dort "_Database1_" zu gewünschten Namen mit _Rechtsklick_ -> _Umbenennen_ umändern.
 2. _Rechtsklick_ auf die gerade umbenannte Projektdatenbank -> "_Importieren_" -> "_Datenbank_". Im neuen Fenster "_Verbindung auswählen_" anklicken und erkannte Datenbankverbindung auswählen oder manuell Servername, Datenbank Name und Authentifikationsdaten eingeben.
@@ -168,8 +168,8 @@ Um eine Serverdatenbank zu importieren darf keine SQL Datei unter dem Projekt be
 1. [Strg-Shift-S] drücken um alles zu Speichern und danach "_Rechtsklick_" auf unsere Datenbank -> "_Optionen_". Im neuen Fenster unter "_Projekt Optionen_" bei "_Zielplattform_" die SQL-Server Version des Ziel-Servers auswählen. Danach die "_Projekt Optionen_" wieder schließen.
 2. _Rechtsklick_ auf gewünschte Projektdatenbank -> "_Veröffentlichen_".
 3. Im neuen Fenster "_Bearbeiten_" anklicken und im neuen "Verbindungs" Fenster die automatisch erkannte Verbindung auswählen oder Servername, Datenbank Name und Authentifikationsdaten manuell eingeben. Danach auf "_Ok_" klicken.
-4. Kontrollieren ob "Datenbank Name" stimmt und danach auf "_Profil speichern unter..._" klicken. Die Datei im vorausgewählten Ort abspeichern und nach Belieben umbennennen. **Die Dateiendung ".publish.xml" darf nicht gelöscht oder geändert werden.**
-5. Jetzt sollte automatisch eine neue Datei unter dem Projekt liegen. Diese hat den Nutzten, dass sie auf Doppelklick automatisch die vorherigen ausgewählten Daten in das "Veröffentlichen" Fenster einträgt und man nurnoch auf "_Veröffentlichen_" drücken muss.
+4. Kontrollieren ob "Datenbank Name" stimmt und danach auf "_Profil speichern unter..._" klicken. Die Datei im vorausgewählten Ort abspeichern und nach Belieben umbenennen. **Die Dateiendung ".publish.xml" darf nicht gelöscht oder geändert werden.**
+5. Jetzt sollte automatisch eine neue Datei unter dem Projekt liegen. Diese hat den Nutzten, dass sie auf Doppelklick automatisch die vorherigen ausgewählten Daten in das "Veröffentlichen" Fenster einträgt und man nur noch auf "_Veröffentlichen_" drücken muss.
 
 ---
 
@@ -185,12 +185,12 @@ Um eine Serverdatenbank zu importieren darf keine SQL Datei unter dem Projekt be
 Um dies möglich zum machen ist eine vorhanden Verbindung zu einem SQL-Server vorausgesetzt. **(siehe 1.5)**
 
 1. Über "_Ansicht_" den "_SQL Server Objekt Explorer_" öffnen und "SQL Server" bis zu der Datenbank Orderstruktur öffnen.
-2. Mit _Rechklick_ auf "_Tables_","_Views_", "_Stored Procedures_"(unter "_Programmability_"),... kann ein jeweils Neues erstellt werden.
+2. Mit _Rechtsklick_ auf "_Tables_","_Views_", "_Stored Procedures_"(unter "_Programmability_"),... kann ein jeweils Neues erstellt werden.
 3. Mit _Doppelklick_ oder _Rechtsklick_ -> "_Design anschauen_" auf ein vorhandenes Objekt (Tabelle, View, stored Procedure,...) kann dies bearbeitet und mit "_Aktualisieren_" hochgeladen **(siehe ab 1.6.5)** werden.
 4. Als Beispiel eine neue Tabelle. _Rechtsklick_ auf den Ordner "_Tables_" -> "_neue Datentabelle_". Hier kann man gleich arbeiten wie bei **1.1.4 bis 1.1.7**.
-5. Hier werden Objekte dejoch nicht mit [Strg + S] gespeichert sondern mit "_Aktualisieren_". Der Button ist links ober dem Tabllen-Design Feld.
+5. Hier werden Objekte jedoch nicht mit [Strg + S] gespeichert sondern mit "_Aktualisieren_". Der Button ist links ober dem Tabllen-Design Feld.
 6. Im neuen Fenster sicherstellen, dass der Haken bei "transactional scripts inkludieren" da ist und dann auf "_Datenbank aktualisieren_" klicken. **Dieser Schritt ist jedoch nur einmalig pro Neustart möglich und wird bei _Antwort 2.2_ ausführlicher erklärt.**
-7. Eine solche Aktualisierung erfolgt jedoch nur auf der Serverdatenbank. Um die Aktualisierung auch auf die Projektdatebank zu übertragen muss **Anleitung 1.2** ausgeführt werden.
+7. Eine solche Aktualisierung erfolgt jedoch nur auf der Serverdatenbank. Um die Aktualisierung auch auf die Projektdatenbank zu übertragen muss **Anleitung 1.2** ausgeführt werden.
 
 ---
 
@@ -223,9 +223,9 @@ Daten können nur in die Serverdatenbank geladen werden. Deshalb ist eine Verbin
 
 1. Über "_Ansicht_" den "_SQL Server Objekt Explorer_" oder **Solution Explorer** öffnen und eine der zu Vergleichenden Datenbanken in der Ordnerstruktur auffinden
 2. _Rechtsklick_ auf eine der zu vergleichenden Tabellen -> "_Schema Vergleich_".
-3. Als nächstes bei "_Ziel auswählen_" die zweite Datenbanke, entweder ein eine Projektdatenbank oder eine Serverdatenbank, auswählen und danach mit "_Ok_" bestätigen.
+3. Als nächstes bei "_Ziel auswählen_" die zweite Datenbank, entweder eine Projektdatenbank oder eine Serverdatenbank, auswählen und danach mit "_Ok_" bestätigen.
 4. Der Vergleich kann mit "_Vergleichen_" gestartet werden. Nach kurzer Zeit werden Ungleichheiten aufgelistet und können aus- und abgewählt werden.  
-   (Es werden immer Ungleicheiten angezeigt welche die rechte Seite hat, bzw die rechte Seite wird von der Aktualisierung beeinflusst)
+   (Es werden immer Ungleichheiten angezeigt welche die rechte Seite hat, bzw die rechte Seite wird von der Aktualisierung beeinflusst)
 5. Nach der gewünschten Auswahl kann mit "_Aktualisieren_" die Änderungen durchgeführt werden.
 6. **(optional)** Dieser Vergleich kann nach Bedürfnis auch gespeichert werden um die **Schritte 1.9.1 bis 1.9.3** in Zukunft überspringen zu können.
 
@@ -233,13 +233,13 @@ Daten können nur in die Serverdatenbank geladen werden. Deshalb ist eine Verbin
 
 ### 1.10 Datenvergleiche ausführen
 
-Um Datenvergleiche durchzuführen müssen die beiden Datenbanken die gleiche Tabellen haben bzw. die zu vergleichenden Daten müssen in gleichnamigen Tabellen mit der gleichen Struktur sein. Vor einem Datenverleich sollte ein Schemaverlgeich **(Anleitung 1.9)** durchgeführt werden.
+Um Datenvergleiche durchzuführen müssen die beiden Datenbanken die gleiche Tabellen haben bzw. die zu vergleichenden Daten müssen in gleichnamigen Tabellen mit der gleichen Struktur sein. Vor einem Datenvergleich sollte ein Schemavergleich **(Anleitung 1.9)** durchgeführt werden.
 
 1. Über "_Ansicht_" den "_SQL Server Objekt Explorer_" öffnen und eine der zu Vergleichenden Datenbanken in der Ordnerstruktur auffinden.
 2. _Rechtsklick_ auf eine der zu vergleichenden Tabellen -> "_Daten Vergleich_".
 3. Im neuen Fenster unter "_Verbindung auswählen_" die zweite Datenbank auswählen und danach mit "_weiter_" weiter.
 4. Jetzt kann ausgewählt werden ob Tabellen und/oder Views verglichen werden. Der Vergleich kann mit "_Abschließen_" gestartet werden. Nach kurzer Zeit werden Ungleichheiten aufgelistet und können aus- und abgewählt werden.  
-   (Es werden immer Ungleicheiten angezeigt welche die rechte Seite hat, bzw die rechte Seite wird von der Aktualisierung beeinflusst)
+   (Es werden immer Ungleichheiten angezeigt welche die rechte Seite hat, bzw die rechte Seite wird von der Aktualisierung beeinflusst)
 5. Nach der gewünschten Auswahl der zu übertragenden Daten kann mit "_Aktualisieren_" die Änderungen durchgeführt werden.
 6. **(optional)** Dieser Vergleich kann nach Bedürfnis auch gespeichert werden um die **Schritte 1.9.1 bis 1.9.3** in Zukunft überspringen zu können.
 
@@ -249,7 +249,7 @@ Um Datenvergleiche durchzuführen müssen die beiden Datenbanken die gleiche Tab
 
 Datenbank Projekte in VisualStudio haben den Vorteil, dass alle Aktualisierungen oder Veröffentlichungen über Skripte funktionieren. Das heißt, dass Aktionen wie eine Tabellenänderung einfach als Skript gespeichert werden kann und dies in anderen SQL Umgebungen wieder ausgeführt werden kann.
 
-1. In fast jedem Fenster gibt es einen Kopf "Skript erzeugen" oder "Skript anzeigen", dieser Erzeugt ein Skript welches wie der der Beschreibung erklärt wiederverwentbar ist und seine Funktion auch in anderen Umgebungen ausführen kann.
+1. In fast jedem Fenster gibt es einen Kopf "Skript erzeugen" oder "Skript anzeigen", dieser Erzeugt ein Skript welches wie der der Beschreibung erklärt wiederverwendbar ist und seine Funktion auch in anderen Umgebungen ausführen kann.
    (Dies Erfordert natürlich die richtigen Namen und Bezeichnungen.)
 
 ---
@@ -260,15 +260,15 @@ Datenbank Projekte in VisualStudio haben den Vorteil, dass alle Aktualisierungen
 
 ### 2.1 Kann ich auch VisualStudio Code benutzten?
 
-Nein beziehungsweise teilweise.  
-Grundsätzlich kann man nur VisualStudio für Database Projekte verwenden, da VisualStudio ein IDE (Integrated Development Environment) und VistualStudio Code nur ein Code Editor ist. Jedocht kann man in VisualStudio Code SQL schreiben, dies ist jedocht auch nicht allzu sinnvoll, da man in VisualStudio eine Design Seite (nur für Tabellen) und IntelliSense und bessere Debug-Möglichkeiten hat welche das Arbeiten sehr stark erleichtern.  
+Nein aber teilweise.  
+Grundsätzlich kann man nur VisualStudio für Database Projekte verwenden, da VisualStudio ein IDE (Integrated Development Environment) und VistualStudio Code nur ein Code Editor ist. Jedoch kann man in VisualStudio Code SQL schreiben, dies ist jedoch auch nicht allzu sinnvoll, da man in VisualStudio eine Design Seite (nur für Tabellen), IntelliSense und bessere Debug-Möglichkeiten hat, welche das Arbeiten sehr stark erleichtern.  
 Ich würde von der Verwendung von VisualStudio Code bei einem Database Projekt stark abraten.
 
 ---
 
 ### 2.2 Warum muss ich nach jeder Serveraktualisierung das Projekt neustarten?
 
-Dies ist leider ein Bug für den es noch keine Lösung gibt. Das Problem äusert sich durch das unendliche Laden Das Problem kann kurzzeitg umgangen werden indem man das Projekt schließt und neu öffnet, danach kann man eine Änderung wieder durchführen. **Achtung, die noch nicht übertragene Änderung geht beim Neustart verlorern** d.h. Die Datei in der eine Änderung durchgeführt werden soll bitte vor Neustart mit [Strg + S] speichern und danach wieder aufrufen oder den SQL-Code einfacht mit [Strg + c] vor Neustart kopieren und nach Neustart im gleichen Fenst mit [Strg + V] einfügen.
+Dies ist leider ein Bug für den es noch keine Lösung gibt. Das Problem äußert sich durch das unendliche Laden beim Versuch eine Serverdatenbank zu aktualisieren. Das Problem kann kurzzeitig umgangen werden indem man das Projekt schließt und neu öffnet, danach kann man eine Änderung durchführen. **Achtung, die noch nicht übertragene Änderung geht beim Neustart verlorern** d.h. Die Datei in der eine Änderung durchgeführt werden soll bitte vor Neustart mit [Strg + S] speichern und danach wieder aufrufen oder den SQL-Code einfacht mit [Strg + c] vor Neustart kopieren und nach Neustart im gleichen Fenster mit [Strg + V] einfügen.
 
 ---
 
@@ -282,9 +282,9 @@ Es ist möglich alle Tätigkeiten welche in SSMS durchgeführt werden auch in Vi
 
 ### 2.4 Was passiert mit Daten in der Datenbank?
 
-Das kommt auf die Handhabung mit der Datenbank an. Wenn man eine Serverdatenbank mit Daten in VisualStudio importiert werden die Daten nicht übertragen, da VisualStudio nur die "Infrastruktur" einer Datenbank speichert. Fügt man beispielsweise bei einer mit Daten befüllten Taballe eine weiter Spalte hinzu und ladet diese Datenbank wieder auf den Server, sollte es keine Konflikte geben. Die Daten bleiben erhalten und die neue Spalte wird mit den Normalwerten ausgefüllt.
+Das kommt auf die Handhabung mit der Datenbank an. Wenn man eine Serverdatenbank mit Daten in VisualStudio importiert werden die Daten nicht übertragen, da VisualStudio nur die "Infrastruktur" einer Datenbank speichert. Fügt man beispielsweise bei einer mit Daten befüllten Tabelle eine weiter Spalte hinzu und ladet diese Datenbank wieder auf den Server, sollte es keine Konflikte geben. Die Daten bleiben erhalten und die neue Spalte wird mit den Normalwerten ausgefüllt.
 
-Löscht man jedoch eine Spalte aus einer Tablle und ladet dessen Datenbank wieder auf den Server entsteht ein Konflikt. (Auch wenn die gelöschte Spalte nur mit "_NULL_" gefüllt ist). Da die Übertragung auf den Server nur aus einem Skript besteht kann man das enthaltene"_if_ " und "_RAISEERROR_" welche den Konflikt auslösen einfach löschen oder mit "--" auskommentieren um dies zu umgehen. Die Spalte wird bei erneuter Ausführung des Scriptes **(nicht der Aktualisierung selbst)** erfolgreich gelöscht und dessen Daten gehen verloren. Die Daten in den anderen Spalten der Tabelle bleiben vorhanden.
+Löscht man jedoch eine Spalte aus einer Tabelle und ladet dessen Datenbank wieder auf den Server entsteht ein Konflikt. (Auch wenn die gelöschte Spalte nur mit "_NULL_" gefüllt ist). Da die Übertragung auf den Server nur aus einem Skript besteht kann man das enthaltene "_if_ " und "_RAISEERROR_" welche den Konflikt auslösen einfach löschen oder mit "--" auskommentieren um dies zu umgehen. Die Spalte wird bei erneuter Ausführung des Scriptes **(nicht der Aktualisierung selbst)** erfolgreich gelöscht und dessen Daten gehen verloren. Die Daten in den anderen Spalten der Tabelle bleiben vorhanden.
 
 ---
 
@@ -316,7 +316,7 @@ Dies ist am besten mit "Schema Vergleichen" möglich. Diese werden in Anleitung 
 
 ### 2.7 Kann ich Git verwenden?
 
-Ja, ganz einfach über den "_Team Exlorer_" ein Repository erstellen. Änderungen können mit "_committ_" und "_push_" dann hochgeladen werden.
+Ja, ganz einfach über den "_Team Explorer_" ein Repository erstellen. Änderungen können mit "_committ_" und "_push_" dann hochgeladen werden.
 
 ---
 

@@ -1,3 +1,4 @@
 ﻿CREATE VIEW [dbo].[AllCustomers]
-	AS SELECT CustomerID, GoldMember, Balance
-	FROM [Customer]
+	AS SELECT CustomerID, Balance, Lastname
+	FROM [Customer]s
+	where GoldMember = 1
