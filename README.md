@@ -39,7 +39,7 @@ Mit **Projektdatenbank** ist eine Datenbank "Struktur" gemeint welche auf keinem
 ### 1.1 Database "Struktur" aufbauen und auf SQL-Server erstellen
 
 1. Mit [Strg + Alt + L] den **Solution Explorer** aufrufen und dort "_Database1_" zu gewünschten Namen mit _Rechtsklick_ -> _Umbenennen_ umändern.
-2. _Dies ist nur optional, es dient jedoch zu einer besseren Übersicht und einfachere Verständnis._ _Rechtsklick_ auf die soeben umbenannte Datenbank -> "_Hinzufügen_" -> "_Ordner_". Der Ordner wird standartmäßig "_dbo_" genannt. Danach erstellen sie mit _Rechtsklick_ auf "_dbo_" -> "_Hinzufügen_" -> "_Ordner_" drei weitere Ordner bis eine Orderstruktur wie folgt erstanden ist.
+2. _Dies ist nur optional, es dient jedoch zu einer besseren Übersicht und einfacherem Verständnis._ _Rechtsklick_ auf die soeben umbenannte Datenbank -> "_Hinzufügen_" -> "_Ordner_". Der Ordner wird standartmäßig "_dbo_" genannt. Danach erstellen sie mit _Rechtsklick_ auf "_dbo_" -> "_Hinzufügen_" -> "_Ordner_" drei weitere Ordner bis eine Orderstruktur wie folgt erstanden ist.
    - dbo
      - Tables
      - Views
