@@ -266,7 +266,7 @@ Ich würde von der Verwendung von VisualStudio Code bei einem Database Projekt s
 
 ---
 
-### 2.2 Warum muss ich nach jeder ServeraktualiSierung das Projekt neustarten?
+### 2.2 Warum muss ich nach jeder Serveraktualisierung das Projekt neustarten?
 
 Dies ist leider ein Bug für den es noch keine Lösung gibt. Das Problem äußert sich durch das unendliche Laden beim Versuch eine Serverdatenbank zu aktualiSieren. Das Problem kann kurzzeitig umgangen werden indem man das Projekt schließt und neu öffnet, danach kann man eine Änderung durchführen. **Achtung, die noch nicht übertragene Änderung geht beim Neustart verlorern** d.h. Die Datei in der eine Änderung durchgeführt werden soll bitte vor Neustart mit [Strg + S] speichern und danach wieder aufrufen oder den SQL-Code einfacht mit [Strg + c] vor Neustart kopieren und nach Neustart im gleichen Fenster mit [Strg + V] einfügen.
 
@@ -280,7 +280,7 @@ Es ist möglich alle Tätigkeiten welche in SSMS durchgeführt werden auch in Vi
 
 ---
 
-### 2.4 Was pasSiert mit Daten in der Datenbank?
+### 2.4 Was passiert mit Daten in der Datenbank?
 
 Das kommt auf die Handhabung mit der Datenbank an. Wenn man eine Serverdatenbank mit Daten in VisualStudio importiert werden die Daten nicht übertragen, da VisualStudio nur die "Infrastruktur" einer Datenbank speichert. Fügt man beispielsweise bei einer mit Daten befüllten Tabelle eine weiter Spalte hinzu und ladet diese Datenbank wieder auf den Server, sollte es keine Konflikte geben. Die Daten bleiben erhalten und die neue Spalte wird mit den Normalwerten ausgefüllt.
 
