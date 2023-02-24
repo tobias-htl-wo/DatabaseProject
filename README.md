@@ -225,8 +225,8 @@ Daten können nur in die Serverdatenbank geladen werden. Deshalb ist eine Verbin
 2. _Rechtsklick_ auf eine der zu vergleichenden Tabellen -> "_Schema Vergleich_".
 3. Als nächstes bei "_Ziel auswählen_" die zweite Datenbank, entweder eine Projektdatenbank oder eine Serverdatenbank, auswählen und danach mit "_Ok_" bestätigen.
 4. Der Vergleich kann mit "_Vergleichen_" gestartet werden. Nach kurzer Zeit werden Ungleichheiten aufgelistet und können aus- und abgewählt werden.  
-   (Es werden immer Ungleichheiten angezeigt welche die rechte Seite hat, bzw die rechte Seite wird von der AktualiSierung beeinflusst)
-5. Nach der gewünschten Auswahl kann mit "_AktualiSieren_" die Änderungen durchgeführt werden.
+   (Es werden immer Ungleichheiten angezeigt welche die rechte Seite hat, bzw die rechte Seite wird von der Aktualisierung beeinflusst)
+5. Nach der gewünschten Auswahl kann mit "_Aktualisieren_" die Änderungen durchgeführt werden.
 6. **(optional)** Dieser Vergleich kann nach Bedürfnis auch gespeichert werden um die **Schritte 1.9.1 bis 1.9.3** in Zukunft überspringen zu können.
 
 ---
@@ -239,15 +239,15 @@ Um Datenvergleiche durchzuführen müssen die beiden Datenbanken die gleiche Tab
 2. _Rechtsklick_ auf eine der zu vergleichenden Tabellen -> "_Daten Vergleich_".
 3. Im neuen Fenster unter "_Verbindung auswählen_" die zweite Datenbank auswählen und danach mit "_weiter_" weiter.
 4. Jetzt kann ausgewählt werden ob Tabellen und/oder Views verglichen werden. Der Vergleich kann mit "_Abschließen_" gestartet werden. Nach kurzer Zeit werden Ungleichheiten aufgelistet und können aus- und abgewählt werden.  
-   (Es werden immer Ungleichheiten angezeigt welche die rechte Seite hat, bzw die rechte Seite wird von der AktualiSierung beeinflusst)
-5. Nach der gewünschten Auswahl der zu übertragenden Daten kann mit "_AktualiSieren_" die Änderungen durchgeführt werden.
+   (Es werden immer Ungleichheiten angezeigt welche die rechte Seite hat, bzw die rechte Seite wird von der Aktualisierung beeinflusst)
+5. Nach der gewünschten Auswahl der zu übertragenden Daten kann mit "_Aktualisieren_" die Änderungen durchgeführt werden.
 6. **(optional)** Dieser Vergleich kann nach Bedürfnis auch gespeichert werden um die **Schritte 1.9.1 bis 1.9.3** in Zukunft überspringen zu können.
 
 ---
 
 ### 1.11 Aktionen mehrere Male in verschieden Umgebungen durchführen mit Änderungsskripts.
 
-Datenbank Projekte in VisualStudio haben den Vorteil, dass alle AktualiSierungen oder Veröffentlichungen über Skripte funktionieren. Das heißt, dass Aktionen wie eine Tabellenänderung einfach als Skript gespeichert werden kann und dies in anderen SQL Umgebungen wieder ausgeführt werden kann.
+Datenbank Projekte in VisualStudio haben den Vorteil, dass alle Aktualisierungen oder Veröffentlichungen über Skripte funktionieren. Das heißt, dass Aktionen wie eine Tabellenänderung einfach als Skript gespeichert werden kann und dies in anderen SQL Umgebungen wieder ausgeführt werden kann.
 
 1. In fast jedem Fenster gibt es einen Kopf "Skript erzeugen" oder "Skript anzeigen", dieser Erzeugt ein Skript welches wie der der Beschreibung erklärt wiederverwendbar ist und seine Funktion auch in anderen Umgebungen ausführen kann.
    (Dies Erfordert natürlich die richtigen Namen und Bezeichnungen.)
